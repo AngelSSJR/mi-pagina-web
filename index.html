@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para el menú responsive -->
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Encabezado fijo -->
+    <header>
+        <h1>Mi Página Personal</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de mí</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <i class="fas fa-bars menu-icon"></i>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Acerca de mí -->
+        <section class="acerca">
+            <h2 class="sticky-title">Acerca de mí</h2>
+            <p>Hola soy Angel y actualmente estoy estudiando Análisis y Desarrollo de Software. Estoy en una etapa de aprendizaje donde estoy conociendo los conceptos básicos de la programación, como el uso de condicionales, ciclos y manejo de datos. Me interesa mucho el mundo de la tecnología y quiero seguir avanzando poco a poco, practicando con ejercicios y proyectos simples que me ayuden a ganar experiencia.</p>
+            <img src="img/mi-foto.jpg.jpeg" alt="Foto de Angel" width="200">
+        </section>
+
+        <!-- Sección Galería -->
+        <section>
+            <h2>Galería</h2>
+            <div class="carrusel">
+                <img src="img/abf88b1b87e7a2074f15324bb052886b.jpg" alt="Imagen 1">
+                <img src="img/anime-dragon-ball-super-black-goku-wallpaper-1366x768_46.jpg" alt="Imagen 2">
+                <img src="img/goku_black_alternate_world_of_time_wallpaper_by_windyechoes_dbf7zbi-pre.jpg" alt="Imagen 3">
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section class="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="tarjeta">
+                <img src="img/html1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Un pequeño sitio web hecho con HTML y CSS.</p>
+            </div>
+            <div class="tarjeta">
+                <img src="img/istockphoto-1386341272-612x612.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Aplicación básica con JavaScript en progreso.</p>
+            </div>
+        </section>
+    </main>
+
+
+<!-- Sección Contacto -->
+<section class="contacto">
+    <h2>Contacto</h2>
+    <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="formMsg"></p>
+</section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 - Mi primera página web</p>
+    </footer>
+    <script src="scripts.js"></script>
+
+</body>
+</html>
